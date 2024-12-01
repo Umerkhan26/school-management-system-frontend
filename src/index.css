@@ -1,0 +1,303 @@
+/* class Section */
+
+.section-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* General styles for the header */
+header {
+  padding: 1rem;
+  background-color: #f9f7f9;
+}
+
+/* Styles for the nav links */
+.nav-link {
+  font-size: 1rem;
+  color: #ffffff !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #dcdcdc !important;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: transparent !important; /* Disable background color on hover */
+  color: #0d6efd !important; /* Optional: Ensure the text color stays black */
+}
+
+/* Styles for the buttons */
+.btn-outline-light {
+  border-color: #ffffff;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #712cf9;
+}
+
+.btn-light {
+  background-color: #ffffff;
+  color: #712cf9;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-light:hover {
+  background-color: #f0f0f0;
+}
+
+/* Logo and text alignment */
+header .col-md-3 img {
+  margin-right: 0.5rem;
+}
+
+header .col-md-3 div span.fw-bold {
+  font-size: 1.2em;
+}
+
+header .col-md-3 div span.text-muted {
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .text-end {
+    margin-top: 1rem;
+  }
+}
+
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  bottom: 10%;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+  border: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.home-container {
+  background-image: url("./assets/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.btn-primary {
+  background-color: #1e64ae;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+}
+
+.text-custom {
+  color: #efd000 !important;
+}
+
+.section-container {
+  margin-top: 4rem;
+}
+
+.section-container .text-center {
+  margin-bottom: 2rem;
+}
+
+.section-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  line-height: 1.5;
+  color: #545454;
+}
+
+.section-container h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 25px;
+  line-height: 1.5;
+  color: #545454;
+}
+
+.section-container h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #545454;
+}
+
+.section-container p.lead {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+
+/* CSS for custom divider */
+.custom-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-divider .line,
+.custom-divider .second-line {
+  height: 2px;
+  width: 1cm;
+  background-color: #efd000;
+}
+
+.custom-divider .circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #efd000;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* Styles for the list items */
+.section-container .list-unstyled li {
+  margin-bottom: 1rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  color: #545454; /* Lightened color */
+  position: relative;
+}
+
+/* Styles for the buttons */
+.section-container .btn-outline-danger.rounded-pill {
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #efd000;
+  border: 1px solid #efd000;
+}
+
+.section-container .btn-outline-danger:hover {
+  background-color: #efd000;
+  color: #fff; /* Change text color on hover for better contrast */
+  border-color: #efd000; /* Ensure border color matches background on hover */
+}
+/* Styles for the icons and headings */
+.section-container .col-md-4.text-center.my-3 i.fas.fa-chair,
+.section-container .col-md-4.text-center.my-3 i.fas.fa-vial,
+.section-container .col-md-4.text-center.my-3 i.fas.fa-desktop,
+.section-container .col-md-4.text-center.my-3 i.fas.fa-user-md,
+.section-container .col-md-4.text-center.my-3 i.fas.fa-ice-cream,
+.section-container .col-md-4.text-center.my-3 i.fas.fa-bus {
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+  padding: 35px;
+  color: #efd000;
+}
+
+.section-container .col-md-4.text-center.my-3 h5.font-weight-bold {
+  margin-top: 1rem;
+  line-height: 1.3;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}

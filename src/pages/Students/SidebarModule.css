@@ -1,0 +1,133 @@
+/* .sidebar-container .icon-margin-right {
+  margin-right: 11px;
+}
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 280px;
+  background-color: #343a40;
+  overflow-x: hidden;
+  transition: all 0.3s;
+}
+
+.sidebar-container.closed {
+  transform: translateX(-100%);
+}
+
+
+.nav-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.nav-link.active {
+  background-color: transparent;
+  color: white;
+}
+
+.nav-link .icon-margin-right {
+  margin-right: 10px;
+}
+
+.nav-link:hover {
+  background-color: #0d6efd;
+  border-radius: var(--bs-nav-pills-border-radius);
+}
+
+.sidebar-container.closed {
+  width: 0;
+  overflow: hidden;
+}
+
+.sidebar-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .sidebar-container.closed {
+    width: 0;
+    overflow: hidden;
+  }
+
+  .sidebar-container.open {
+    width: 250px;
+  }
+} */
+
+/* Sidebar Container Styles */
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 280px;
+  background-color: #343a40;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  transition: width 0.3s;
+}
+
+.sidebar-container.closed {
+  width: 0;
+}
+
+.sidebar-container .icon-margin-right {
+  margin-right: 11px;
+}
+
+/* Nav Link Styles */
+.nav-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  background-color: transparent;
+  color: white;
+}
+
+.nav-link .icon-margin-right {
+  margin-right: 10px;
+}
+
+.nav-link:hover {
+  background-color: #0d6efd;
+  border-radius: var(--bs-nav-pills-border-radius);
+}
+
+/* Sidebar Toggle Styles */
+.sidebar-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+  }
+
+  .sidebar-container.closed {
+    width: 0;
+    overflow: hidden;
+  }
+
+  .sidebar-container.open {
+    width: 280px;
+  }
+}

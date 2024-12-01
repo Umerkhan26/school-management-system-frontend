@@ -1,0 +1,59 @@
+/* index.css */
+.bg-image {
+  background-color: #04122c; /* Background color */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.bg-overlay {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* .card {
+  max-width: 634px;
+  margin: 0 auto;
+  background-color: #000; 
+  color: #fff;
+  border-radius: 10px; 
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+} */
+
+.card-header {
+  padding: 20px;
+  text-align: center;
+  color: white; /* Ensure text color is white */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-select,
+.form-control {
+  margin-bottom: 15px;
+}
+
+/* .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff; 
+} */
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+/* Additional media queries for responsiveness */
+@media (max-width: 634px) {
+  .card {
+    margin: 10px; /* Add some margin on small screens */
+  }
+}
