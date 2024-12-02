@@ -211,7 +211,7 @@ const Home = () => {
             style={{ marginRight: "20px" }}
           >
             <img
-              src="/src/assets/logo.jpeg"
+              src="/logo.jpeg"
               alt="logo"
               style={{ height: "60px", width: "60px", borderRadius: "50%" }}
             />
