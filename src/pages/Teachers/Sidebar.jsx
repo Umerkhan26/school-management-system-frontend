@@ -70,12 +70,12 @@ const Sidebar = () => {
             </Link>
           </li> */}
 
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link to="/teacher/attendance" className="nav-link" exact>
               <FaClipboardList className="bi pe-none icon-margin-right" />
               Attendance
             </Link>
-          </li>
+          </li> */}
           <li className="nav-item">
             <Link to="/teacher/students" className="nav-link" exact>
               <FaUserGraduate className="bi pe-none icon-margin-right" />

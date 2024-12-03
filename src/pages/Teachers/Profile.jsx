@@ -43,7 +43,7 @@ const TeacherProfileSection = () => {
             style={{ backgroundColor: "white", color: "black" }}
           >
             <Card.Body>
-              <Card.Title>Student Profile</Card.Title>
+              <Card.Title>Teacher Profile</Card.Title>
               {isEditing ? (
                 <>
                   <Form>
@@ -75,7 +75,7 @@ const TeacherProfileSection = () => {
                         />
                       </Col>
                     </Row>
-                    <Row className="mb-3">
+                    {/* <Row className="mb-3">
                       <Col md={4}>
                         <strong>Class:</strong>
                       </Col>
@@ -88,7 +88,7 @@ const TeacherProfileSection = () => {
                           onChange={handleInputChange}
                         />
                       </Col>
-                    </Row>
+                    </Row> */}
                     <Row className="mb-3">
                       <Col md={4}>
                         <strong>Email:</strong>
@@ -150,12 +150,12 @@ const TeacherProfileSection = () => {
                     </Col>
                     <Col md={8}>{studentData.regNo}</Col>
                   </Row>
-                  <Row className="mb-3">
+                  {/* <Row className="mb-3">
                     <Col md={4}>
                       <strong>Class:</strong>
                     </Col>
                     <Col md={8}>{studentData.class}</Col>
-                  </Row>
+                  </Row> */}
                   <Row className="mb-3">
                     <Col md={4}>
                       <strong>Email:</strong>
@@ -173,7 +173,7 @@ const TeacherProfileSection = () => {
                       <strong>Address:</strong>
                     </Col>
                     <Col md={8}>{studentData.address}</Col>
-                  </Row>
+                  </Row>{" "}
                   <Button variant="primary" onClick={toggleEditMode}>
                     Update Profile
                   </Button>
